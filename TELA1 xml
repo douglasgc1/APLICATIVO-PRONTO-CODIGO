@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:hint="Digite o nome..."
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <TextView
+        android:id="@+id/txtEmailNome"
+        android:layout_width="406dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editNome"
+        app:layout_constraintVertical_bias="0.48000002"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite o email..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+        app:layout_constraintVertical_bias="0.307"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/txtTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Número de Telefone"
+        app:layout_constraintBottom_toTopOf="@+id/editTelefone"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+    <EditText
+        android:id="@+id/editTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Insira o Telefone..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtHorário"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefone"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/txtHorário"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Horário( Disponível 8:00 até 18:00)"
+        app:layout_constraintBottom_toTopOf="@+id/editHorário"
+        app:layout_constraintTop_toBottomOf="@+id/editTelefone"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editHorário"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Digite o horário..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/bt_segunda_tela"
+        app:layout_constraintTop_toBottomOf="@+id/txtHorário"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/bt_segunda_tela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="confirmar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editHorário"
+        tools:layout_editor_absoluteX="153dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
